@@ -59,9 +59,7 @@ btn.addEventListener("click", function () {
     check = 0;
   }
 
-  if (check === 1) {
-    alert("Submit success");
-  }
+
 });
 
 
