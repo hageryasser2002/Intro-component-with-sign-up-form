@@ -1,0 +1,133 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    font-family: "Montserrat";
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+    height: 100vh;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#col_1 {
+    grid-template-rows: auto;
+    align-content: center;
+    padding: 10px;
+    height: 100vh;
+}
+
+#col_2 {
+    grid-template-rows: auto;
+    align-content: center;
+    padding: 30px;
+    height: 100vh;
+}
+
+#offer {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    height: 90px;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px hsl(246, 25%, 77%);
+}
+
+#form_container {
+    align-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 3px 3px hsl(246, 25%, 77%);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+form {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+input {
+    color: hsl(249, 10%, 26%);
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    margin: 10px;
+    border-style: none;
+    box-shadow: 2px 2px 2px 2px hsl(246, 25%, 77%);
+
+}
+
+#btn {
+    background-color: hsl(154, 59%, 51%);
+    border-style: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px hsl(246, 25%, 77%);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+span {
+    color: hsl(0, 100%, 74%);
+}
+
+#form_container p,
+#offer span {
+    color: hsl(246, 25%, 77%);
+}
+
+@media (max-width: 675px){
+    #container {
+        background-image:url('./images/bg-intro-mobile.png');
+        height: 100%;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    #col_1 {
+        height: 50vh;
+    }
+
+    #col_2
+    {
+        height: auto;
+    }
+
+}
+
+input.error {
+    border: 1px solid hsl(0, 100%, 74%); 
+    background-image: url('./images/icon-error.svg'); 
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px 20px; 
+  }
+  
+
+  
